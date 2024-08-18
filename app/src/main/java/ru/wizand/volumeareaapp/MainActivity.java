@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 String value = values[position]; // arg2 is the index of item
                 Class ourClass  = null;
                 try {
-                    ourClass = Class.forName("ru.wizand.volumeareaapp."+val);
+                    ourClass = Class.forName("ru.wizand.volumeareaapp."+value);
                 } catch (ClassNotFoundException e) {
                     throw new RuntimeException(e);
                 }

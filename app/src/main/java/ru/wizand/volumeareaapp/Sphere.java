@@ -33,7 +33,7 @@ public class Sphere extends AppCompatActivity {
             public void onClick(View view) {
                 String radius = sphere_radius.getText().toString();
 
-                int r = Integer.parseInt(radius);
+                Double r = Double.parseDouble(radius);
 
                 // V = (4/3) * pi * r^3
 
