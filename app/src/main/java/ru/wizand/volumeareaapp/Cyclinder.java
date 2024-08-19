@@ -42,8 +42,8 @@ public class Cyclinder extends AppCompatActivity {
 
                 // V = (4/3) * pi * r^3
 
-                double volume = 3.14159 * r*r * h;
-                result.setText("V = "+volume+" m^3");
+                double volume = Math.PI * Math.pow(r, 2) * h;
+                result.setText(getString(R.string.v)+volume+getString(R.string.m_3));
             }
         });
 

@@ -39,7 +39,7 @@ public class Cube extends AppCompatActivity {
 
 
                 double volume = r*r*r;
-                result.setText("V = "+volume+" m^3");
+                result.setText(getString(R.string.v)+volume+getString(R.string.m_3));
             }
         });
 

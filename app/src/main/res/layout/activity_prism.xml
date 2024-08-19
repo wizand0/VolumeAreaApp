@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".Sphere">
+    tools:context=".Prism">
 
     <TextView
         android:id="@+id/textView2"
@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:gravity="center"
-        android:text="Sphere Volume"
+        android:text="@string/prism_volume"
         android:textColor="@color/white"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,12 +26,14 @@
         android:id="@+id/editTextFirst"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:autofillHints=""
+        android:hint="@string/please_enter_the_1_side_of_the_prism"
         android:inputType="number"
-        android:layout_marginTop="88dp"
-        android:hint="Please Enter the 1 side of the prism"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -40,7 +42,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:hint="Please Enter the 1 side of the prism"
+        android:autofillHints=""
+        android:hint="@string/please_enter_the_2_side_of_the_prism"
         android:inputType="number"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -54,7 +57,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:hint="Please Enter the 1 side of the prism"
+        android:autofillHints=""
+        android:hint="@string/please_enter_the_1_side_of_the_prism"
         android:inputType="number"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -67,9 +71,9 @@
         android:id="@+id/textView3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="240dp"
         android:padding="8dp"
-        android:text="Result"
+        android:text="@string/result"
         android:textColor="@color/white"
         android:textSize="38sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,11 +85,22 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="63dp"
-        android:text="Calculate"
+        android:layout_marginTop="48dp"
+        android:text="@string/btn_calculate"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextThird" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:src="@drawable/prism_formula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

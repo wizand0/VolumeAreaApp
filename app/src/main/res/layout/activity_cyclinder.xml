@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".Sphere">
+    tools:context=".Cyclinder">
 
     <TextView
         android:id="@+id/textView2"
@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:gravity="center"
-        android:text="Cyclinder Volume"
+        android:text="@string/cyclinder_volume"
         android:textColor="@color/white"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,11 +26,12 @@
         android:id="@+id/editTextRadius"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:hint="Please Enter the radius"
+        android:layout_marginTop="52dp"
+        android:hint="@string/radius"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -38,12 +39,13 @@
         android:id="@+id/editTextHight"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:hint="Please Enter the Height"
+        android:layout_marginTop="56dp"
+        android:hint="@string/height"
         android:inputType="number"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextRadius" />
 
@@ -51,22 +53,34 @@
         android:id="@+id/textView3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="184dp"
-        android:text="Result"
-        android:textColor="@color/white"
+        android:layout_marginTop="252dp"
         android:padding="8dp"
+        android:text="@string/result"
+        android:textColor="@color/white"
         android:textSize="38sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextHight" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:src="@drawable/cylinder_formula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="193dp"
-        android:text="Calculate"
+        android:layout_marginTop="160dp"
+        android:text="@string/btn_calculate"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextRadius" />
 

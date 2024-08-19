@@ -37,8 +37,8 @@ public class Sphere extends AppCompatActivity {
 
                 // V = (4/3) * pi * r^3
 
-                double volume = (4/3) * 3.14159 * r*r*r;
-                result.setText("V = "+volume+" m^3");
+                double volume = (4/3) * Math.PI * Math.pow(r, 3);
+                result.setText(getString(R.string.v)+volume+getString(R.string.m_3));
             }
         });
 

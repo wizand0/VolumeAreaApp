@@ -46,7 +46,7 @@ public class Prism extends AppCompatActivity {
 
 
                 double volume = r1*r2*r3;
-                result.setText("V = "+volume+" m^3");
+                result.setText(getString(R.string.v)+volume+getString(R.string.m_3));
             }
         });
 
