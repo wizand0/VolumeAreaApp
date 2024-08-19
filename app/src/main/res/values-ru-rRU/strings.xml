@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Калькулятор Объема тел</string>
+    <string name="app_name">Калькуляторы объема</string>
     <string name="sphere">Сфера</string>
     <string name="cyclinder">Цилиндр</string>
     <string name="cube">Куб</string>
