@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.DecimalFormat;
+
 public class Sphere extends AppCompatActivity {
 
     EditText sphere_radius;
@@ -37,8 +39,9 @@ public class Sphere extends AppCompatActivity {
 
                 // V = (4/3) * pi * r^3
 
-                double volume = (4/3) * Math.PI * Math.pow(r, 3);
-                result.setText(getString(R.string.v)+volume+getString(R.string.m_3));
+                double volume = (4.0/3) * Math.PI * Math.pow(r, 3);
+                DecimalFormat df = new DecimalFormat("0.0000");
+                result.setText(getString(R.string.v)+df.format(volume)+getString(R.string.m_3));
             }
         });
 

@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.DecimalFormat;
+
 public class TruncatedPiramid extends AppCompatActivity {
 
     EditText r1, r2, height;
@@ -43,7 +45,8 @@ public class TruncatedPiramid extends AppCompatActivity {
                 Double height1 = Double.parseDouble(s3);
 
                 double volume = 1.0/3 * height1 * (square1 + Math.sqrt(square1*square2) * square2);
-                result.setText(getString(R.string.v)+volume+getString(R.string.m_3));
+                DecimalFormat df = new DecimalFormat("0.0000");
+                result.setText(getString(R.string.v)+df.format(volume)+getString(R.string.m_3));
             }
         });
 

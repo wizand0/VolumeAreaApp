@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.DecimalFormat;
+
 public class TreugolPiramid extends AppCompatActivity {
 
     EditText r1, height;
@@ -40,7 +42,8 @@ public class TreugolPiramid extends AppCompatActivity {
 
 
                 double volume = (height1 * Math.pow(radius1, 2)) / (4 * Math.sqrt(3));
-                result.setText(getString(R.string.v)+volume+getString(R.string.m_3));
+                DecimalFormat df = new DecimalFormat("0.0000");
+                result.setText(getString(R.string.v)+df.format(volume)+getString(R.string.m_3));
             }
         });
 

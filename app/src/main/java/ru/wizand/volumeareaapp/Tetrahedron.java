@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.DecimalFormat;
+
 public class Tetrahedron extends AppCompatActivity {
 
     EditText r1;
@@ -35,7 +37,8 @@ public class Tetrahedron extends AppCompatActivity {
                 Double radius1 = Double.parseDouble(s1);
 
                 double volume = (Math.pow(radius1, 3) * Math.sqrt(2)) / 12;
-                result.setText(getString(R.string.v)+volume+getString(R.string.m_3));
+                DecimalFormat df = new DecimalFormat("0.0000");
+                result.setText(getString(R.string.v)+df.format(volume)+getString(R.string.m_3));
             }
         });
 

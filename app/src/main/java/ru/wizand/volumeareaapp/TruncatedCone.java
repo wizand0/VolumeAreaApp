@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.DecimalFormat;
+
 public class TruncatedCone extends AppCompatActivity {
 
     EditText r1, r2, height;
@@ -44,7 +46,8 @@ public class TruncatedCone extends AppCompatActivity {
 
                 double volume = 1.0/3 * Math.PI * height1 * (Math.pow(radius1, 2) +
                         radius1 * radius2 + Math.pow(radius2,2));
-                result.setText(getString(R.string.v)+volume+getString(R.string.m_3));
+                DecimalFormat df = new DecimalFormat("0.0000");
+                result.setText(getString(R.string.v)+df.format(volume)+getString(R.string.m_3));
             }
         });
 

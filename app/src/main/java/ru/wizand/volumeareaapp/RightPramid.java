@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.DecimalFormat;
+
 public class RightPramid extends AppCompatActivity {
 
     EditText side, height, count_sides;
@@ -43,7 +45,8 @@ public class RightPramid extends AppCompatActivity {
                 Double sides_count = Double.parseDouble(s3);
 
                 double volume = (sides_count * Math.pow(side, 2) * height) / (12 * Math.tan(180/sides_count));
-                result.setText(getString(R.string.v)+volume+getString(R.string.m_3));
+                DecimalFormat df = new DecimalFormat("0.0000");
+                result.setText(getString(R.string.v)+df.format(volume)+getString(R.string.m_3));
             }
         });
 

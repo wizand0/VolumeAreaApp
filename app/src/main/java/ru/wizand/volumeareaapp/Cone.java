@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.DecimalFormat;
+
 public class Cone extends AppCompatActivity {
 
     EditText radius, height;
@@ -39,7 +41,9 @@ public class Cone extends AppCompatActivity {
                 Double r2 = Double.parseDouble(s2);
 
                 double volume = 1.0/3 * Math.PI * Math.pow(r1, 2)*r2;
-                result.setText(getString(R.string.v)+volume+getString(R.string.m_3));
+                // output format
+                DecimalFormat df = new DecimalFormat("0.0000");
+                result.setText(getString(R.string.v)+df.format(volume)+getString(R.string.m_3));
             }
         });
 

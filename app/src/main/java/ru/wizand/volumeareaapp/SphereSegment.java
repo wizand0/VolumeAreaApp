@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.DecimalFormat;
+
 public class SphereSegment extends AppCompatActivity {
 
     EditText r1, height;
@@ -39,7 +41,8 @@ public class SphereSegment extends AppCompatActivity {
                 Double height1 = Double.parseDouble(s3);
 
                 double volume = 1.0/3 * Math.PI * Math.pow(height1, 2) * (3 * radius1 - height1);
-                result.setText(getString(R.string.v)+volume+getString(R.string.m_3));
+                DecimalFormat df = new DecimalFormat("0.0000");
+                result.setText(getString(R.string.v)+df.format(volume)+getString(R.string.m_3));
             }
         });
 
