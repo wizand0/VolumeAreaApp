@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
@@ -53,10 +55,8 @@ public class Formulas extends AppCompatActivity {
 
 
 
-//        String[] values = new String[] { "Sphere", "Cyclinder", "Cube", "Prism",
-//                "QuadrangularPyramid", "Cone", "Piramid", "RightPramid", "SphereSegment",
-//                "SphereSektor", "SphereLayer", "Tetrahedron", "TreugolPiramid", "TruncatedCone",
-//                "TruncatedPiramid" };
+        String[] values = new String[] { "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9",
+                "F10", "F10", "F11", "F12", "F13"};
 
 
         formulaArrayList.add(f1);
@@ -75,26 +75,30 @@ public class Formulas extends AppCompatActivity {
 
 
 
-
-
-
         adapter = new MyFormulaAdapter(formulaArrayList, getApplicationContext());
 
         gridView.setAdapter(adapter);
         gridView.setNumColumns(2);
 
+        // Grid for classes Formulas
 
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+//                Intent i = new Intent(getApplicationContext(), Sphere.class);
+//                startActivity(i);
 
-
-
-
-
-
-
-
-
-
-
+                String value = values[position]; // arg2 is the index of item
+                Class ourClass  = null;
+                try {
+                    ourClass = Class.forName("ru.wizand.volumeareaapp."+value);
+                } catch (ClassNotFoundException e) {
+                    throw new RuntimeException(e);
+                }
+                Intent i = new Intent(getApplicationContext(), ourClass);
+                startActivity(i);
+            }
+        });
 
 
     }

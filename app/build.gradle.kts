@@ -10,8 +10,8 @@ android {
         applicationId = "ru.wizand.volumeareaapp"
         minSdk = 24
         targetSdk = 34
-        versionCode = 6
-        versionName = "1.5.1"
+        versionCode = 7
+        versionName = "1.5.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -28,6 +28,9 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 

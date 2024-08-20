@@ -62,7 +62,7 @@
     <string name="this_app_is_free_software_under_the_gnu_gpl_3_0_license">Лицензия: GNU GPL 3.0 license</string>
     <string name="volume_calculator">Основные 3d объекты</string>
     <string name="arbitrary_triangle">Произвольный\nтреугольник</string>
-    <string name="right_angled_triangle">Прямоугольный\nтреугольник</string>
+        <string name="right_angled_triangle">Прямоугольный\nтреугольник</string>
     <string name="equilateral_triangle">Равносторонний\nтреугольник</string>
     <string name="arbitrary_quadrilateral">Произвольный\nчетырехугольник</string>
     <string name="parallelogram">Параллелограмм</string>

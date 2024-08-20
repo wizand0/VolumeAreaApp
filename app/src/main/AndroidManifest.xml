@@ -13,6 +13,46 @@
         android:theme="@style/Theme.VolumeAreaApp"
         tools:targetApi="31">
         <activity
+            android:name=".F13"
+            android:exported="false" />
+        <activity
+            android:name=".F12"
+            android:exported="false" />
+        <activity
+            android:name=".F11"
+            android:exported="false" />
+        <activity
+            android:name=".F10"
+            android:exported="false" />
+        <activity
+            android:name=".F9"
+            android:exported="false" />
+        <activity
+            android:name=".F8"
+            android:exported="false" />
+        <activity
+            android:name=".F7"
+            android:exported="false" />
+<!--            android:label="@string/title_activity_f7"-->
+        <activity
+            android:name=".F6"
+            android:exported="false" />
+        <activity
+            android:name=".F5"
+            android:exported="false" />
+        <activity
+            android:name=".F4"
+            android:exported="false" />
+        <activity
+            android:name=".F3"
+            android:exported="false" />
+        <activity
+            android:name=".F2"
+            android:exported="false" />
+        <activity
+            android:name=".F1"
+            android:exported="false" />
+        <activity
             android:name=".Area"
             android:exported="false" />
         <activity
