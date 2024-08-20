@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:autofillHints=""
-        android:hint="@string/please_enter_the_1_side_of_the_prism"
+        android:hint="@string/please_enter_the_3_side_of_the_prism"
         android:inputType="number"
         android:textColor="@color/white"
         android:textColorHint="@color/white"

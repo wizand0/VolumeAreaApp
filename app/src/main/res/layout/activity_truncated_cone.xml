@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:autofillHints=""
-        android:hint="@string/please_enter_the_first_radius"
+        android:hint="@string/please_enter_the_second_radius"
         android:inputType="number"
         android:textColor="@color/white"
         android:textColorHint="@color/white"

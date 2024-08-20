@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/shapes"
+        android:title="@string/shape_volume"/>
+<!--    <item android:id="@+id/area"-->
+<!--        android:title="@string/area_of_figures"/>-->
+    <item android:id="@+id/formulas"
+        android:title="@string/geometric_formulas"/>
+    <item android:id="@+id/about"
+        android:title="@string/about"/>
+
+</menu>
